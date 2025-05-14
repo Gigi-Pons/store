@@ -10,8 +10,8 @@ public class OrderService {
         this.paymentService = paymentService;
     }
 
-    public void placeOrder() {
-        paymentService.processPayment(10);
+    public void placeOrder(double amount) {
+        paymentService.processPayment(amount);
     }
 
     public void setPaymentService(PaymentService paymentService) {
